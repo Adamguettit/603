@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// made on: Dec 13
+// made by: Adam G
+// more efficient way of the old address code
+
+struct Address {
+    var name: String
+    var streetNumber: Int
+    var streetName: String
+    var city: String
+    var province: String
+    var postalCode: String
+}
+
+let nameEntered = ask("Enter Your Name")
+
+let streetNumberEntered = askForNumber("Enter Street Number")
+
+let streetNameEntered = ask("Enter Street Name")
+
+let cityEntered = ask("Enter City")
+
+let provinceEntered = ask("Enter Province")
+
+let postalCodeEntered = ask("Enter Postal Code")
+
+let adress = Address(name: nameEntered, streetNumber: streetNumberEntered, streetName: streetNameEntered, city: cityEntered, province: provinceEntered, postalCode: postalCodeEntered)
+
+show("""
+    \(adress.name)  
+    \(String(adress.streetNumber)) \(adress.streetName) 
+    \(adress.city) \(adress.province) \(adress.postalCode)
+    """)
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 878}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 72}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
